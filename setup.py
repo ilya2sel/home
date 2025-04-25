@@ -140,9 +140,6 @@ cd() {
         ore)
             builtin cd /workspaces/obi-dev-env/apps/lambda/service-ore/
             ;;
-        xre)
-            builtin cd /workspaces/obi-dev-env/apps/services/service-xre/
-            ;;
         matrix)
             builtin cd /workspaces/obi-dev-env/apps/services/service-matrix/
             ;;
