@@ -85,10 +85,10 @@ def main():
 
     # 2) Remove old /opt/nvim (as per instructions) and re-extract Neovim
     run_cmd("sudo rm -rf /opt/nvim")
-    run_cmd(f"sudo tar -C /opt -xzf {NVIM_TARBALL}")
+    run_cmd(f"sudo tar -C /opt -xzf {NVIM_TARBALL} --transform s/nvim-linux64/nvim/")
 
     # 3) Add Neovim to PATH in ~/.bashrc (appended if not already present)
-    append_line_once(BASHRC_PATH, 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"')
+    append_line_once(BASHRC_PATH, 'export PATH="$PATH:/opt/nvim/bin"')
 
     # 4) Ensure packer.nvim is installed
     ensure_packer_installed()
