@@ -40,8 +40,8 @@ cd() {
         warehouse)
             builtin cd /workspaces/obi-dev-env/apps/services/php/service-warehouse/
             ;;
-        xre)
-            builtin cd /workspaces/obi-dev-env/apps/services/service-xre/
+        ore)
+            builtin cd /workspaces/obi-dev-env/apps/lambda/service-ore/
             ;;
         matrix)
             builtin cd /workspaces/obi-dev-env/apps/services/service-matrix/
@@ -84,6 +84,12 @@ cd() {
             ;;
         reviews)
             builtin cd /workspaces/obi-dev-env/apps/lambda/service-reviews/
+            ;;
+       obiship-api)
+            builtin cd /workspaces/obi-dev-env/apps/services/obiship-api/
+            ;;
+        obiship-app)
+            builtin cd /workspaces/obi-dev-env/apps/frontend/obiship-app/
             ;;
         *)
             builtin cd "$1"     # Default to normal behavior for other paths
